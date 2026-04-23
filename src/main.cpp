@@ -15,6 +15,8 @@ int main() {
         
         // Binary optimization: decompose p items into powers of 2
         // This reduces O(p) to O(log p) for each item type
+        // Edge case: if p is 0, skip processing
+        if (p == 0) continue;
         int remaining = p;
         int power = 1;
         
